@@ -88,26 +88,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Analítico: Simulador</title>
+  <title>Analítico: ApC</title>
 
+  <meta property="description" itemprop="description" content="Aproveite os dados desse portal e traga seus comentários para ampliarmos ainda mais a relevância do mesmo."/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Analítico: Simulador"/>
+  <meta property="og:title" content="Analítico: ApC"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Aproveite os dados desse portal e traga seus comentários para ampliarmos ainda mais a relevância do mesmo."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Analítico"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Analítico: Simulador"/>
+  <meta property="twitter:title" content="Analítico: ApC"/>
+  <meta property="twitter:description" content="Aproveite os dados desse portal e traga seus comentários para ampliarmos ainda mais a relevância do mesmo."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","css"]}},"value":[{"type":"character","attributes":{},"value":["Simulador"]},{"type":"character","attributes":{},"value":["styles.css"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site","css"]}},"value":[{"type":"character","attributes":{},"value":["ApC"]},{"type":"character","attributes":{},"value":["Aproveite os dados desse portal e traga seus comentários para ampliarmos ainda mais a relevância do mesmo. \n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["styles.css"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2092,7 +2095,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Simulador","authors":[]}
+{"title":"ApC","description":"Aproveite os dados desse portal e traga seus comentários para ampliarmos ainda mais a relevância do mesmo.","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2149,10 +2152,10 @@ Videoteca
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Simulador</h1>
+<h1>ApC</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>Aproveite os dados desse portal e traga seus comentários para ampliarmos ainda mais a relevância do mesmo.</p></p>
 </div>
 
 
@@ -2162,145 +2165,46 @@ Videoteca
 d-title, d-byline {
   display: none
 }
+/* Ajusta a largura máxima do artigo*/
+d-article {
+    grid-template-columns: 
+        1fr  /* espaço à esquerda */
+        [text-start] 2% 2% 2% 2% 2% 2% 2% [text-end] 
+        1fr; /* espaço à direita */
+    grid-column-gap: 10%;
+}
 </style>
 </div>
 <p><br></p>
-<h2 id="simulador-ideb---anos-iniciais">Simulador IDEB - Anos Iniciais</h2>
-<p>Digite os valores e clique em calcular:</p>
-<style>
-  .calculator-container {
-    font-family: Arial, sans-serif;
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .calculator-container label {
-    font-size: 16px;
-    margin-right: 10px;
-  }
-  
-  .calculator-container input[type="number"] {
-    margin-bottom: 10px;
-    padding: 5px 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-
-  .calculator-container button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-
-  .calculator-container button:hover {
-    background-color: #0056b3;
-  }
-
-  .result-display {
-    font-size: 24px;
-    font-weight: bold;
-    color: darkblue;
-    margin-top: 20px;
-  }
-</style>
-<div class="calculator-container">
-<label for="numero1">Qual a Taxa de Rendimento:</label>
-<input type="number" id="numero1">
-<br>
-<label for="numero2">Qual a Taxa de Proficiência?:</label>
-<input type="number" id="numero2">
-<br>
-<button onclick="calcular()">Calcular</button>
-<div id="resultado" class="result-display">
-
-</div>
-</div>
-<script>
-function calcular() {
-    // Pegando os valores dos campos
-    let num1 = parseFloat(document.getElementById('numero1').value);
-    let num2 = parseFloat(document.getElementById('numero2').value);
-    // Realizando o cálculo
-    let res = (num1 / 2) * num2;
-    // Mostrando o resultado
-    document.getElementById('resultado').textContent = res.toFixed(1);
-}
-</script>
-<h2 id="simulador-ideb---anos-finais">Simulador IDEB - Anos Finais</h2>
-<p>Digite os valores e clique em calcular:</p>
-<style>
-  .calculator-container {
-    font-family: Arial, sans-serif;
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .calculator-container label {
-    font-size: 16px;
-    margin-right: 10px;
-  }
-  
-  .calculator-container input[type="number"] {
-    margin-bottom: 10px;
-    padding: 5px 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-
-  .calculator-container button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-
-  .calculator-container button:hover {
-    background-color: #0056b3;
-  }
-
-  .result-display {
-    font-size: 24px;
-    font-weight: bold;
-    color: darkblue;
-    margin-top: 20px;
-  }
-</style>
-<div class="calculator-container">
-<label for="numero1">Qual a Taxa de Rendimento:</label>
-<input type="number" id="numero1">
-<br>
-<label for="numero2">Qual a Taxa de Proficiência?:</label>
-<input type="number" id="numero2">
-<br>
-<button onclick="calcular()">Calcular</button>
-<div id="resultado" class="result-display">
-
-</div>
-</div>
-<script>
-function calcular() {
-    // Pegando os valores dos campos
-    let num1 = parseFloat(document.getElementById('numero1').value);
-    let num2 = parseFloat(document.getElementById('numero2').value);
-    // Realizando o cálculo
-    let res = (num1 / 2) * num2;
-    // Mostrando o resultado
-    document.getElementById('resultado').textContent = res.toFixed(1);
-}
-</script>
+<p>PISTAS IDENTIFICADAS NO AVALIAR PARA CONHECER 2023 QUE PODEM COLABORAR PARA O PLANEJAMENTO RELACIONADO AO SAEB 2023</p>
+<h3 id="participação">PARTICIPAÇÃO</h3>
+<p>A taxa de participação da sua escola no Avaliar para Conhecer foi:</p>
+<p>gráfico</p>
+<p>Vale lembrar que, no SAEB, para ter os resultados divulgados, é necessário que 80% dos estudantes realizem a avaliação de desempenho. Sem atingir esse mínimo, os resultados são computados, integram os resultados da Rede Municipal de Educação, mas não são divulgados.</p>
+<h3 id="marcação-no-cartão-resposta">MARCAÇÃO NO CARTÃO-RESPOSTA</h3>
+<p>Diversos estudantes podem saber solucionar as questões das provas, mas não saber marcar as respostas no cartão.</p>
+<p>Exemplo de cartão marcado inadequadamente:</p>
+<p>Img</p>
+<p>Exemplo de cartão marcado adequadamente:</p>
+<p>img</p>
+<p>Na sua escola, observam-se os seguintes quantitativos de estudantes (ver tabela abaixo) que fizeram a prova do ApC, marcando mais de uma alternativa em algumas ou várias questões, ou deixando questões em branco.</p>
+<p>Gráfico ou tabela</p>
+<p>Atenção: sem a duplicidade de marcação e sem questão em branco, já há maior probabilidade de aumento na taxa de aprendizado da escola como um todo, tendo em vista que as alternativas das questões formuladas na Teoria de Resposta ao Item (TRI) indicam diferentes níveis de aprendizagens.</p>
+<h3 id="desempenho-dos-estudantes">DESEMPENHO DOS ESTUDANTES</h3>
+<p>O desempenho dos estudantes da sua escola demonstra uma média de 50% de acertos na prova do ApC, de acordo com os grupos relacionados abaixo.</p>
+<p>Tabelas dos percentuais por grupos de indicadores do ApC em LP e MAT</p>
+<p>SUGESTÕES</p>
+<ol type="1">
+<li>Refletir sobre o trabalho pedagógico desenvolvido pela escola no que tange aos melhores resultados do SAEB, na série histórica, para relembrar e retomar práticas que foram boas experiências;</li>
+<li>Elaborar um roteiro pedagógico local;</li>
+<li>Aprofundar os objetos do conhecimento em Língua Portuguesa e em Matemática;</li>
+<li>Trabalhar questões de Matemática que envolvam a interpretação;</li>
+<li>Incentivar a frequência dos estudantes;</li>
+<li>Um pouco antes das provas do SAEB (1 mês antes), começar o processo de familiarização dos estudantes com o tipo de prova objetiva e trabalhar marcação de cartão-resposta, incluindo o estímulo à autonomia dos estudantes na resolução das questões com caneta;</li>
+<li>Realizar uma atividade diferente e atrativa no dia da aplicação, ou mesmo um cardápio diferenciado (com alimentos preferidos dos estudantes da escola), para incentivar a participação de mais de 80% dos estudantes na prova do SAEB;</li>
+<li>Identificar questões a serem trabalhadas e promover ações formativas para professores;</li>
+<li>Contar com o apoio e o trabalho de diferentes setores da Secretaria Municipal de Educação, tanto para contribuir com o planejamento de ações quanto para promover formações que considerar necessárias para os professores, inclusive no que se refere ao trabalho pedagógico com objetos do conhecimento que precisem de mais atenção na escola.</li>
+</ol>
 <footer class="distill-footer">
 © 2023 Todos os direitos reservados.
 <img src="https://raw.githubusercontent.com/e-casa/relatorios/main/nit450.png" alt="CAF SME/FME SSDE">
