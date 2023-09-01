@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "index.html",
+      "title": "Bem-vindo(a)",
+      "description": "Aproveite os dados desse portal e traga seus comentários para ampliarmos ainda mais a relevância do mesmo. \n",
+      "author": [],
+      "contents": "\n\n\n\n\n\n\n\n© 2023 Todos os direitos reservados.\n\n\n\n",
+      "last_modified": "2023-09-01T14:01:14-03:00"
+    },
+    {
+      "path": "simulador.html",
+      "title": "Simulador",
+      "author": [],
+      "contents": "\n\n\n\nSimulador IDEB - Anos Iniciais\nDigite os valores e clique em calcular:\n Qual a Taxa de Rendimento:\n Qual a Taxa de Proficiência?:\nCalcular\nResultado:\n\nSimulador IDEB - Anos Finais\nDigite os valores e clique em calcular:\n Qual a Taxa de Rendimento:\n Qual a Taxa de Proficiência?:\nCalcular\nResultado:\n\n\n© 2023 Todos os direitos reservados.\n\n\n\n",
+      "last_modified": "2023-09-01T14:00:43-03:00"
+    }
+  ],
+  "collections": []
+}

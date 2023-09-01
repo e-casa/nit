@@ -1,0 +1,72 @@
+.distill-site-nav {
+  color: white;
+  background-color: #1b4ede;
+ font-weight: bold; 
+}
+
+
+.distill-footer {
+  display: flex;
+  justify-content: space-between; /* Alinha o texto e a imagem nos extremos opostos */
+  align-items: center; /* Alinha verticalmente o texto e a imagem */
+  background-color: white; /* Cor de fundo do rodapé (opcional) */
+  padding: 20px; /* Espaçamento interno do rodapé */
+}
+
+.distill-footer img {
+  height: 50px; /* Altura da imagem (ajuste conforme necessário) */
+}
+
+
+
+/* Ajusta a largura máxima do conteúdo */
+.distill .distill-article {
+  max-width: 90%; /* ajuste este valor conforme desejado */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ajusta a largura máxima da figura */
+.distill .figure {
+  max-width: 100%; /* permite que a figura ocupe toda a largura do container */
+}
+
+
+/* Ajusta a largura máxima do layout do site */
+.distill-layout {
+  max-width: 95%;  /* Ajuste para a largura desejada */
+}
+
+/* Ajusta a largura máxima do conteúdo do artigo */
+.distill-article-content {
+  max-width: 100%;
+}
+
+/* Ajusta a largura do contêiner bootstrap */
+.container {
+  max-width: 100%;
+}
+
+/* Expande a largura do conteúdo principal */
+.main-content {
+  width: 90%;  /* Ajuste conforme desejado */
+  margin: 0 auto;
+}
+
+
+
+/* Ajusta a largura máxima do layout do site */
+body .distill-layout {
+  max-width: none;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Ajusta a largura máxima do conteúdo do artigo */
+body .distill-article-content {
+  max-width: none;
+  width: 100%;
+}
+
+
+
