@@ -30,7 +30,7 @@
       "description": "Aproveite os dados desse portal e traga seus comentários para ampliarmos ainda mais a relevância do mesmo. \n",
       "author": [],
       "contents": "\n\n\n\n\n\n\n\n© 2023 Todos os direitos reservados.\n\n\n\n",
-      "last_modified": "2023-09-01T15:32:20-03:00"
+      "last_modified": "2023-09-11T16:32:51-03:00"
     },
     {
       "path": "inep.html",
@@ -41,11 +41,18 @@
       "last_modified": "2023-09-01T15:32:21-03:00"
     },
     {
-      "path": "simulador.html",
+      "path": "simulador_af.html",
       "title": "Simulador",
       "author": [],
-      "contents": "\n\n\n\nSimulador IDEB - Anos Iniciais\nDigite os valores e clique em calcular:\n\nQual a Taxa de Rendimento:\nQual a Taxa de Proficiência?:\nCalcular\n\n\n\n\nSimulador IDEB - Anos Finais\nDigite os valores e clique em calcular:\n\nQual a Taxa de Rendimento:\nQual a Taxa de Proficiência?:\nCalcular\n\n\n\n\n\n© 2023 Todos os direitos reservados.\n\n\n\n",
-      "last_modified": "2023-09-01T15:32:22-03:00"
+      "contents": "\n\n\nSimulador IDEB - Anos Finais\nDigite os valores e clique em calcular:\n\nMédia de Proficiência em Língua Portuguesa:\nValor entre 100 e 400\n\n\n\nMédia de Proficiência em Matemática:\nValor entre 100 e 400\n\n\n\nTaxa de Rendimento (%):\n\nCalcular\n\nNota padronizada:\n\n\nIDEB:\n\n\n\n© 2023 Todos os direitos reservados.\n\n\n\n",
+      "last_modified": "2023-09-11T16:33:06-03:00"
+    },
+    {
+      "path": "simulador_ai.html",
+      "title": "Simulador",
+      "author": [],
+      "contents": "\n\n\nSimulador IDEB - Anos Iniciais\nDigite os valores e clique em calcular:\n\nMédia de Proficiência em Língua Portuguesa:\nValor entre 49 e 324\n\n\n\nMédia de Proficiência em Matemática:\nValor entre 60 e 322\n\n\n\nTaxa de Rendimento (%):\n\nCalcular\n\nNota padronizada:\n\n\nIDEB:\n\n\n\n© 2023 Todos os direitos reservados.\n\n\n\n",
+      "last_modified": "2023-09-11T16:33:29-03:00"
     },
     {
       "path": "videoteca.html",

@@ -2116,7 +2116,17 @@ Indicadores da UE
 </div>
 </div>
 <a href="preparese.html">Prepare-se</a>
-<a href="simulador.html">Simulador</a>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+Simulador IDEB
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
+<a href="simulador_ai.html">Anos Iniciais</a>
+<a href="simulador_af.html">Anos Finais</a>
+</div>
+</div>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
 Biblioteca
@@ -2164,7 +2174,7 @@ d-title, d-byline {
 }
 </style>
 </div>
-<h2 id="simulador-ideb---anos-iniciais">Simulador IDEB - Anos Iniciais</h2>
+<h2 id="simulador-ideb---anos-finais">Simulador IDEB - Anos Finais</h2>
 <p>Digite os valores e clique em calcular:</p>
 <style>
   .calculator-container {
@@ -2231,13 +2241,13 @@ d-title, d-byline {
 </style>
 <div class="calculator-container">
 <label for="proficienciaLP">Média de Proficiência em Língua Portuguesa:</label>
-<span class="instruction">Valor entre 49 e 324</span>
+<span class="instruction">Valor entre 100 e 400</span>
 <input type="number" id="proficienciaLP" min="49" max="324">
 <div id="notaPadronizadaLP" class="result-display">
 
 </div>
 <label for="proficienciaMAT">Média de Proficiência em Matemática:</label>
-<span class="instruction">Valor entre 60 e 322</span>
+<span class="instruction">Valor entre 100 e 400</span>
 <input type="number" id="proficienciaMAT" min="60" max="322">
 <div id="notaPadronizadaMAT" class="result-display">
 
@@ -2260,8 +2270,8 @@ function calcular() {
     let rendimento = parseFloat(document.getElementById('rendimento').value) / 100; // Convertendo para valor decimal
     
     // Calculando a Nota Padronizada para LP e MAT
-    let notaPadronizadaLP = ((proficienciaLP - 49) / (324 - 49)) * 10;
-    let notaPadronizadaMAT = ((proficienciaMAT - 60) / (322 - 60)) * 10;
+    let notaPadronizadaLP = ((proficienciaLP - 100) / (400 - 100)) * 10;
+    let notaPadronizadaMAT = ((proficienciaMAT - 100) / (400 - 100)) * 10;
     
     // Calculando a Nota Padronizada total
     let notaPadronizadaTotal = (notaPadronizadaLP + notaPadronizadaMAT) / 2;
