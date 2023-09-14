@@ -2252,7 +2252,7 @@ d-title, d-byline {
 <div id="notaPadronizadaMAT" class="result-display">
 
 </div>
-<p><label for="rendimento">Taxa de Rendimento (%):</label>
+<p><label for="rendimento">Taxa de Rendimento:</label>
 <input type="number" id="rendimento"></p>
 <p><button onclick="calcular()">Calcular</button></p>
 <div id="notaPadronizadaTotal" class="result-display">
@@ -2267,7 +2267,7 @@ function calcular() {
     // Pegando os valores dos campos
     let proficienciaLP = parseFloat(document.getElementById('proficienciaLP').value);
     let proficienciaMAT = parseFloat(document.getElementById('proficienciaMAT').value);
-    let rendimento = parseFloat(document.getElementById('rendimento').value) / 100; // Convertendo para valor decimal
+    let rendimento = parseFloat(document.getElementById('rendimento').value) ; // Convertendo para valor decimal
     
     // Calculando a Nota Padronizada para LP e MAT
     let notaPadronizadaLP = ((proficienciaLP - 49) / (324 - 49)) * 10;
