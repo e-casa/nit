@@ -107,7 +107,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","css"]}},"value":[{"type":"character","attributes":{},"value":["Plantão"]},{"type":"character","attributes":{},"value":["styles.css"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","css"]}},"value":[{"type":"character","attributes":{},"value":["Plantão"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["styles.css"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2104,17 +2104,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <div class="nav-right">
 <a href="index.html">Início</a>
-<div class="nav-dropdown">
-<button class="nav-dropbtn">
-Indicadores da UE
- 
-<span class="down-arrow">&#x25BE;</span>
-</button>
-<div class="nav-dropdown-content">
-<a href="inep.html">INEP</a>
-<a href="apc.html">ApC</a>
-</div>
-</div>
+<a href="inep.html">Indicadores da UE</a>
 <a href="preparese.html">Prepare-se</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
@@ -2149,6 +2139,8 @@ Videoteca
 <a href="videoteca2.html">Youtube e outros</a>
 </div>
 </div>
+<a href="forum.html">Fórum</a>
+<a href="mural.html">Mural Virtual</a>
 <a href="plantao.html">Plantão</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
@@ -2172,7 +2164,20 @@ Videoteca
 d-title, d-byline {
   display: none
 }
+/* Ajusta a largura máxima do artigo*/
+d-article {
+    grid-template-columns: 
+        1fr  /* espaço à esquerda */
+        [text-start] 2% 2% 2% 2% 2% 2% 2% [text-end] 
+        1fr; /* espaço à direita */
+    grid-column-gap: 10%;
+}
 </style>
+</div>
+<p><br></p>
+<h2 id="divulgação-saeb-2023">Divulgação SAEB 2023</h2>
+<div class="layout-chunk" data-layout="l-body">
+<iframe src="https://www.youtube.com/embed/aE6Qrs_UFwE?autoplay=1" width="800px" height="450px" frameborder="0" allowfullscreen="TRUE"></iframe>
 </div>
 <footer class="distill-footer">
 © 2023 Todos os direitos reservados.
