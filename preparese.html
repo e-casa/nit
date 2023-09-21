@@ -2171,7 +2171,19 @@ Interação
 
 
 <div class="d-article">
-<style>
+<div class="layout-chunk" data-layout="l-body">
+<style type="text/css">
+d-title, d-byline {
+  display: none
+}
+/* Ajusta a largura máxima do artigo*/
+d-article {
+    grid-template-columns: 
+        1fr  /* espaço à esquerda */
+        [text-start] 2% 2% 2% 2% 2% 2% 2% [text-end] 
+        1fr; /* espaço à direita */
+    grid-column-gap: 10%;
+}
 /* Estilos para a tabela */
 table {
   width: 100%; /* Ocupa toda a largura disponível */
@@ -2201,55 +2213,45 @@ table td:nth-child(2) {
   width: 70%; /* Segunda coluna ocupa 2/3 da largura */
   vertical-align: middle; /* Alinhamento vertical no centro */
 }
-</style>
-<div class="layout-chunk" data-layout="l-body">
-<style type="text/css">
-d-title, d-byline {
-  display: none
-}
-/* Ajusta a largura máxima do artigo*/
-d-article {
-    grid-template-columns: 
-        1fr  /* espaço à esquerda */
-        [text-start] 2% 2% 2% 2% 2% 2% 2% [text-end] 
-        1fr; /* espaço à direita */
-    grid-column-gap: 10%;
-}
-.whatsapp-button {
+
+/* Estilos para o botão do WhatsApp */
+#whatsappBtn {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #25D366;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 50px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    z-index: 1000; /* para garantir que o botão apareça acima de outros elementos */
-}
-.whatsapp-button {
-    position: fixed !important;
-    bottom: 10px !important;
-    right: 10px !important;
-    /* ... restante do CSS ... */
+    right: 10px; /* Isso alinha o botão à direita da tela com uma margem de 10px */
 }
 
-.whatsapp-button img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+#whatsappBtn img {
+    width: 34px;
+    height: 34px;
 }
+
 
 </style>
 </div>
-<p><br></p>
-<p><a href="https://wa.me/5521967824266" class="whatsapp-button" target="_blank">
-<img src="https://raw.githubusercontent.com/e-casa/nit/main/what.png" alt="WhatsApp" />
-</a></p>
+<div class="layout-chunk" data-layout="l-body">
+<script type="text/javascript">
+
+// Código para fazer o botão flutuar no centro da tela
+$(document).ready(function() {
+    var $whatsappBtn = $('#whatsappBtn');
+    $(window).on('scroll', function() {
+        var topPosition = $(window).scrollTop() + ($(window).height() / 2) - ($whatsappBtn.outerHeight() / 2);
+        $whatsappBtn.css('top', topPosition + 'px');
+    });
+});
+
+</script>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <h2 id="apc---avaliar-para-conhecer">ApC - Avaliar para Conhecer</h2>
 <h3 id="provas-e-soluções">PROVAS E SOLUÇÕES</h3>
 <p><strong>ApC 2013</strong>
@@ -2314,6 +2316,9 @@ d-article {
 </tr>
 </tbody>
 </table>
+<p><a href="https://wa.me/5521967824266" id="whatsappBtn" class="whatsapp-button">
+<img src="https://raw.githubusercontent.com/e-casa/nit/main/what.png" alt="WhatsApp">
+</a></p>
 <footer class="distill-footer">
 © 2023 Todos os direitos reservados.
 <img src="https://raw.githubusercontent.com/e-casa/relatorios/main/nit450.png" alt="CAF SME/FME SSDE">

@@ -2184,8 +2184,74 @@ d-article {
         1fr; /* espaço à direita */
     grid-column-gap: 10%;
 }
+/* Estilos para a tabela */
+table {
+  width: 100%; /* Ocupa toda a largura disponível */
+  border-collapse: collapse; /* Remove espaços entre células */
+}
+
+/* Estilos para as células da tabela */
+table td {
+  padding-top: 10px; /* Espaçamento no topo da célula */
+  padding-bottom: 0px; /* Espaçamento na base da célula */
+  border: 1px solid #ddd; /* Adiciona uma borda para visualização clara */
+}
+
+/* Estilos para iframes */
+iframe {
+  border: none; /* Remove a borda do iframe */
+  margin: 0; /* Remove a margem */
+  display: block; /* Remove qualquer espaço em branco abaixo do iframe */
+}
+
+/* Estilos para as colunas */
+table td:nth-child(1) {
+  width: 30%; /* Primeira coluna ocupa 1/3 da largura */
+  vertical-align: top; /* Alinhamento vertical no topo */
+}
+table td:nth-child(2) {
+  width: 70%; /* Segunda coluna ocupa 2/3 da largura */
+  vertical-align: middle; /* Alinhamento vertical no centro */
+}
+
+/* Estilos para o botão do WhatsApp */
+#whatsappBtn {
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-decoration: none;
+    right: 10px; /* Isso alinha o botão à direita da tela com uma margem de 10px */
+}
+
+#whatsappBtn img {
+    width: 34px;
+    height: 34px;
+}
+
+
 </style>
 </div>
+<div class="layout-chunk" data-layout="l-body">
+<script type="text/javascript">
+
+// Código para fazer o botão flutuar no centro da tela
+$(document).ready(function() {
+    var $whatsappBtn = $('#whatsappBtn');
+    $(window).on('scroll', function() {
+        var topPosition = $(window).scrollTop() + ($(window).height() / 2) - ($whatsappBtn.outerHeight() / 2);
+        $whatsappBtn.css('top', topPosition + 'px');
+    });
+});
+
+</script>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <p><br></p>
 <p><br></p>
 <p><strong>Testes e Questionários do SAEB</strong>
@@ -2194,38 +2260,9 @@ d-article {
 <a href="https://fmeniteroi-my.sharepoint.com/:b:/g/personal/caf_educacao_niteroi_rj_gov_br/Ee73c0JEaS5KqdquuzFD4MMBNePfz-A8NpbaQ5jyzxvoNg?e=0aIggk" target="_blank">Link para o documento</a></p>
 <p><strong>Escalas de Proficiência do SAEB</strong>
 <a href="https://fmeniteroi-my.sharepoint.com/:b:/g/personal/caf_educacao_niteroi_rj_gov_br/ESXUrdLgMH9ElEOtJ4w6dgcBN9NBnNNlJ0KlmOk4kX-mLA?e=iukfgE" target="_blank">Link para o documento</a></p>
-<!-- <style> -->
-<!-- /* Estilos para a tabela */ -->
-<!-- table { -->
-<!--   width: 100%; /* Ocupa toda a largura disponível */ -->
-<!--   border-collapse: collapse; /* Remove espaços entre células */ -->
-<!-- } -->
-<!-- /* Estilos para as células da tabela */ -->
-<!-- table td { -->
-<!--   padding-top: 10px; /* Espaçamento no topo da célula */ -->
-<!--   padding-bottom: 0px; /* Espaçamento na base da célula */ -->
-<!--   border: 1px solid #ddd; /* Adiciona uma borda para visualização clara */ -->
-<!-- } -->
-<!-- /* Estilos para iframes */ -->
-<!-- iframe { -->
-<!--   border: none; /* Remove a borda do iframe */ -->
-<!--   margin: 0; /* Remove a margem */ -->
-<!--   display: block; /* Remove qualquer espaço em branco abaixo do iframe */ -->
-<!-- } -->
-<!-- /* Estilos para as colunas */ -->
-<!-- table td:nth-child(1) { -->
-<!--   width: 33.33%; /* Primeira coluna ocupa 1/3 da largura */ -->
-<!--   vertical-align: top; /* Alinhamento vertical no topo */ -->
-<!-- } -->
-<!-- table td:nth-child(2) { -->
-<!--   width: 66.66%; /* Segunda coluna ocupa 2/3 da largura */ -->
-<!--   vertical-align: middle; /* Alinhamento vertical no centro */ -->
-<!-- } -->
-<!-- </style> -->
-<!-- |            | Descrição |  -->
-<!-- |------------|-----------| -->
-<!-- | <iframe src="https://www.in.gov.br/web/dou/-/portaria-n-267-de-21-de-junho-de-2023-491971666" width="100%" height="500px"></iframe> | Testes e Questionários do SAEB <br> [Link para o documento](https://www.in.gov.br/web/dou/-/portaria-n-267-de-21-de-junho-de-2023-491971666){target="_blank"} | -->
-<!-- | <iframe src="https://download.inep.gov.br/publicacoes/institucionais/avaliacoes_e_exames_da_educacao_basica/saeb_documentos_referencia_versao_preliminar.pdf#view=Fit" width="100%" height="500px"></iframe> | Testes e Questionários do SAEB <br> [Link para o documento](https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb/testes-e-questionarios){target="_blank"} | -->
+<p><a href="https://wa.me/5521967824266" id="whatsappBtn" class="whatsapp-button">
+<img src="https://raw.githubusercontent.com/e-casa/nit/main/what.png" alt="WhatsApp">
+</a></p>
 <footer class="distill-footer">
 © 2023 Todos os direitos reservados.
 <img src="https://raw.githubusercontent.com/e-casa/relatorios/main/nit450.png" alt="CAF SME/FME SSDE">
