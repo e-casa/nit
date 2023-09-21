@@ -2142,9 +2142,18 @@ Videoteca
 <a href="videoteca2.html">Youtube e outros</a>
 </div>
 </div>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+Interação
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
 <a href="forum.html">Fórum</a>
 <a href="mural.html">Mural</a>
 <a href="plantao.html">Plantão</a>
+</div>
+</div>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2162,6 +2171,37 @@ Videoteca
 
 
 <div class="d-article">
+<style>
+/* Estilos para a tabela */
+table {
+  width: 100%; /* Ocupa toda a largura disponível */
+  border-collapse: collapse; /* Remove espaços entre células */
+}
+
+/* Estilos para as células da tabela */
+table td {
+  padding-top: 10px; /* Espaçamento no topo da célula */
+  padding-bottom: 0px; /* Espaçamento na base da célula */
+  border: 1px solid #ddd; /* Adiciona uma borda para visualização clara */
+}
+
+/* Estilos para iframes */
+iframe {
+  border: none; /* Remove a borda do iframe */
+  margin: 0; /* Remove a margem */
+  display: block; /* Remove qualquer espaço em branco abaixo do iframe */
+}
+
+/* Estilos para as colunas */
+table td:nth-child(1) {
+  width: 33.33%; /* Primeira coluna ocupa 1/3 da largura */
+  vertical-align: top; /* Alinhamento vertical no topo */
+}
+table td:nth-child(2) {
+  width: 66.66%; /* Segunda coluna ocupa 2/3 da largura */
+  vertical-align: middle; /* Alinhamento vertical no centro */
+}
+</style>
 <div class="layout-chunk" data-layout="l-body">
 <style type="text/css">
 d-title, d-byline {
@@ -2186,6 +2226,29 @@ d-article {
 <div class="layout-chunk" data-layout="l-body">
 <iframe src="https://www.youtube.com/embed/VodDrp5_2OE" width="400px" height="350px" frameborder="0"></iframe>
 </div>
+<h2 id="cartões-do-inep">Cartões do INEP</h2>
+<table>
+<colgroup>
+<col style="width: 52%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><iframe src="https://download.inep.gov.br/saeb/questionarios/questionario_aluno_5_ano_do_ensino_fundamental.pdf#view=Fit" width="300" height="350px"></iframe></td>
+<td>Questionário do aluno do 5º ano do ensino fundamental <br> <a href="https://download.inep.gov.br/saeb/questionarios/questionario_aluno_5_ano_do_ensino_fundamental.pdf" target="_blank">Link para o documento</a></td>
+</tr>
+<tr class="even">
+<td><iframe src="https://download.inep.gov.br/saeb/questionarios/questionario_aluno_do_9_ano_do_ensino_fundamental.pdf#view=Fit" width="300" height="350px"></iframe></td>
+<td>Questionário do aluno do 9º ano do ensino fundamental <br> <a href="https://download.inep.gov.br/saeb/questionarios/questionario_aluno_do_9_ano_do_ensino_fundamental.pdf" target="_blank">Link para o documento</a></td>
+</tr>
+</tbody>
+</table>
 <footer class="distill-footer">
 © 2023 Todos os direitos reservados.
 <img src="https://raw.githubusercontent.com/e-casa/relatorios/main/nit450.png" alt="CAF SME/FME SSDE">
